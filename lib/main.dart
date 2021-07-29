@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '/localization/localization.dart';
 import 'routers/routers.dart';
 import 'routers/pages.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(App());
 }
 
@@ -19,6 +21,7 @@ class App extends StatelessWidget {
       initialRoute: Routers.SPLASH,
       getPages: Pages.pages,
       locale: Get.locale ?? Locale('en'),
+      translations: Localization(),
     );
   }
 }

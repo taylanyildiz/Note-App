@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import '/bindings/splash_binding.dart';
+import '/bindings/binding.dart';
 import '/routers/routers.dart';
-import '/screens/splash_screen.dart';
+import '/screens/screen.dart';
 
 class Pages {
   Pages._();
@@ -11,6 +11,11 @@ class Pages {
       name: Routers.SPLASH,
       page: () => SplashScreen(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: Routers.REGISTER,
+      page: () => RegisterScreen(),
+      binding: RegisterBinding(),
     ),
   ];
 }

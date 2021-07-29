@@ -1,0 +1,3 @@
+class RestfulConstant {
+  RestfulConstant._();
+}
